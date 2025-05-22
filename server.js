@@ -1,6 +1,10 @@
 import app from './src/app.js'
 import config from './src/config/config.js'
+import { conectDB } from './src/config/db.js'
 
-app.listen(config.port, () =>
-  console.log(`listening on http://localhost:${config.port}`)
-)
+const port = config.port
+
+;(async () => {
+  await conectDB()
+  app.listen(port, () => console.log(`listening on http://localhost:${port}`))
+})()
