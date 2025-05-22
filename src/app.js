@@ -1,6 +1,6 @@
 import express from 'express'
 import morgan from 'morgan'
-import env from './config/env.js'
+import config from './config/config.js'
 import errorHandler from './middleware/errorHandler.js'
 import notFound from './middleware/notFound.js'
 
@@ -13,7 +13,7 @@ app
   .use(morgan('dev'))
 
 app.get('/health', (req, res, next) => {
-  res.status(200).json({ ok: true, env: env.env })
+  res.status(200).json({ ok: true, config: config.env })
 })
 
 app.use(notFound)

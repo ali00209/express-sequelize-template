@@ -1,4 +1,4 @@
-const env = {
+const config = {
   port: process.env.PORT,
   env: process.env.NODE_ENV,
   mySqlUri:
@@ -7,4 +7,4 @@ const env = {
       : process.env.MYSQL_PROD,
 }
 
-export default env
+export default config

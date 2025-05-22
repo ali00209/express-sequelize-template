@@ -1,6 +1,6 @@
 import app from './src/app.js'
-import env from './src/config/env.js'
+import config from './src/config/config.js'
 
-app.listen(env.port, () =>
-  console.log(`listening on http://localhost:${env.port}`)
+app.listen(config.port, () =>
+  console.log(`listening on http://localhost:${config.port}`)
 )

@@ -18,5 +18,9 @@
     "mysql2": "^3.14.1",
     "sequelize": "^6.37.7",
     "throw-http-error": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "sequelize-cli": "^6.6.3"
   }
 }
