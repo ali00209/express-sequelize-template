@@ -5,8 +5,8 @@ const models = {
 }
 
 Object.keys(models).forEach((model) => {
-  if (model.associate) {
-    model.associate(model)
+  if (models[model].associate) {
+    models[model].associate(models)
   }
 })
 
