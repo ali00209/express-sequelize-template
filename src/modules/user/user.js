@@ -11,7 +11,7 @@ const User = sequelize.define(
 )
 
 User.associate = (models) => {
-  User.hasMany(models.Role, { foreignKey: 'userId' })
+  // User.hasMany(models.Role, { foreignKey: 'userId' })
 }
 
 export default User
